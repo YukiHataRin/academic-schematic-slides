@@ -1,0 +1,27 @@
+name: Bug or bad output
+description: The skill produced a poor slide, failed to trigger, or a reference file is wrong.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Describe the problem. Attach the rendered PNG if it is visual.
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt used
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Agent and version
+      placeholder: "e.g. Claude Code x.y.z, Claude.ai"
+  - type: input
+    id: tools
+    attributes:
+      label: Maths and SVG-to-PNG route
+      placeholder: "e.g. LaTeX + dvisvgm, headless Chrome"

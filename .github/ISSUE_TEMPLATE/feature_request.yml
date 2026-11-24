@@ -1,0 +1,14 @@
+name: Suggestion
+description: A new sample, a domain vocabulary, a rendering route, or a clarity fix.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it helps
